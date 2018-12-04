@@ -1,0 +1,17 @@
+<div style="text-align:center" class="container-fluid">
+    <h1>
+      Welcome to {{ title }}!
+    </h1>
+    <div class="row">
+        <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0" class="col-md-8 col-sm-6">
+            <ngb-panel title="Naslov">
+                <ng-template ngbPanelContent>A Basic Panel</ng-template>
+              </ngb-panel>
+          </ngb-accordion>
+        <ngb-alert type="warning" class="col-md-4 col-sm-6"> 
+          
+          Bootstrap is working!
+        </ngb-alert>
+    </div>
+    
+</div>
