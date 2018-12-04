@@ -1,4 +1,4 @@
-import express from 'express';
+var express = require('express');
 const app = express();
 // Allow any method from any host and log requests
 app.use((req, res, next) => {
