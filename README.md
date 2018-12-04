@@ -6,3 +6,5 @@ https://itnext.io/building-restful-web-apis-with-node-js-express-mongodb-and-typ
 
 ZAPISKI:
 - v Lj. treba dodat ts-node -> npm install -D ts-node
+
+- yarn serve se pozene
