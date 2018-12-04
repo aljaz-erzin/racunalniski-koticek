@@ -7,7 +7,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "serve": "concurrently \"ng serve\" \"server/node_modules/.bin/ts-node-dev server/app.ts\""
   },
   "private": true,
   "dependencies": {
@@ -31,6 +32,7 @@
     "rxjs": "~6.3.3",
     "ts-node-dev": "^1.0.0-pre.31",
     "tslib": "^1.9.0",
+    "yarn": "^1.12.3",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {
