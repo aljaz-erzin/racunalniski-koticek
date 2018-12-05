@@ -1,3 +1,5 @@
+import { routes } from './router/routes'; 
+
 var express = require('express');
 const app = express();
 // Allow any method from any host and log requests
@@ -14,10 +16,7 @@ app.use((req, res, next) => {
 });
 // Handle POST requests that come in formatted as JSON
 app.use(express.json());
-// A default hello word route
-app.get('/', (req, res) => {
-    res.send({hello: 'world'});
-});
+app.use('/', routes);
 // start our server on port 4201
 app.listen(4201, '127.0.0.1', function() {
     console.log("Server now listening on 4201");
