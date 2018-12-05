@@ -1,6 +1,10 @@
 import { routes } from './router/routes'; 
 
+
+var mysql = require('mysql');
 var express = require('express');
+
+
 const app = express();
 // Allow any method from any host and log requests
 app.use((req, res, next) => {
@@ -21,3 +25,22 @@ app.use('/', routes);
 app.listen(4201, '127.0.0.1', function() {
     console.log("Server now listening on 4201");
 });
+
+
+var connection = mysql.createConnection({
+    host     : 'localhost',
+    database : 'racunalniski_koticek',
+    user     : 'root',
+    password : 'aljazerzinroot',
+});
+
+connection.connect(function(err) {
+    if (err) {
+        console.error('Napaka  Error connecting: ' + err.stack);
+        return;
+    }
+
+    console.log('Connected as id ' + connection.threadId);
+});
+
+connection.end();
