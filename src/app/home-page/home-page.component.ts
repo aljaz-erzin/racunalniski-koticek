@@ -13,7 +13,7 @@ import { environment } from '../../environments/environment';
 export class HomePage{
     title = 'Računalniški kotiček';
 
-    messages = this.http.get<any[]>('http://localhost:4201/');
+    messages = this.http.get<any[]>('http://localhost:4201/stranke');
     
     constructor(private http: HttpClient) {}
   

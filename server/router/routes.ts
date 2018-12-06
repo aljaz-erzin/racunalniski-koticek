@@ -1,16 +1,17 @@
+import { routes_stranke } from './stranke'
+import { routes_artikli } from './artikli'
 var express = require('express');
-var connection = require('../mysql-connection');
 
 export const app = express.Router();
 export { app as routes };
 
+app.get('/', function(req, res) {
+    res.send('Server Node, dobrodošli!');
+  });
 
-app.get('/', (req, res) =>
-    connection.query('SELECT * FROM stranka', function (error, results) {
-        if (error)
-            throw error;
-            console.log(results);
-            
-            res.send(results)
-    })
-)
+app.use('/stranke', routes_stranke);
+
+app.use('/artikli', routes_stranke);
+
+module.exports.routes = app;
+

@@ -1,7 +1,5 @@
 import { routes } from './router/routes'; 
 
-
-
 var express = require('express');
 
 
@@ -20,9 +18,11 @@ app.use((req, res, next) => {
     }
 });
 
+
 // Handle POST requests that come in formatted as JSON
 app.use(express.json());
 app.use('/', routes);
+
 
 // start our server on port 4201
 app.listen(4201, '127.0.0.1', function() {
