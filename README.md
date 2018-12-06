@@ -1,6 +1,6 @@
 
-CONNECT DB TO SERVER:   
-
+Node MySql:   
+https://www.w3schools.com/nodejs/nodejs_mysql_delete.asp
 ZAPISKI:
 - 
 
