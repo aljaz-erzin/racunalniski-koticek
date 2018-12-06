@@ -1,10 +1,4 @@
 
-<div>
-    <input [(ngModel)]="Ime">
-    <br>
-    <input [(ngModel)]="Passwd">
-    <p>Ime: {{ Ime }}</p>
-    <p>Geslo: {{ Passwd}}</p>
-    
-    <button (click)="Post()">Make a post call</button>
+<div *ngFor="let message of messages | async">
+    {{message.ime}}
 </div>
