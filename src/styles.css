@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    padding-top : 90px;
+}
+
+img, #naslovna-slika {
+    width:60px;
+    height: 60px;
+}
+
+.navbar {
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+.navbar.shrink {
+    height: 40px;
+}
