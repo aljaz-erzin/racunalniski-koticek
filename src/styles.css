@@ -3,6 +3,10 @@
 body {
     padding-top : 90px;
 }
+footer {
+    height : 120px;
+    background-color:#a1d6fc;
+}
 
 img, #naslovna-slika {
     width:60px;
@@ -14,8 +18,18 @@ img, #naslovna-slika {
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
+    background-color: #a1d6fc;
 }
 
 .navbar.shrink {
     height: 40px;
+}
+
+#navigation-bar-napis
+{
+    display: none;
+    margin-top: 10px;
+    font-family: Helvetica;
+    font-size: 20px;
+    color: #010701;
 }

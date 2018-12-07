@@ -17,25 +17,31 @@ $(function(){
 
     $( "nav" ).on({
         mouseover: function() {
-            $('#button-home').hide();
-            $('#naslovna-slika').show();
-            $('.navbar').removeClass('shrink');
+            if ($(document).scrollTop() > 50)
+            {
+                $('#navigation-bar-napis').hide();
+                $('.navbar-brand').show();
+                $('.navbar').removeClass('shrink');
+            }
         }, mouseleave: function() {
-            $('#naslovna-slika').hide();
-            $('#button-home').show();
-          $('.navbar').addClass('shrink');
+            if ($(document).scrollTop() > 50)
+            {
+                $('.navbar-brand').hide();
+                $('#navigation-bar-napis').show();
+                $('.navbar').addClass('shrink');
+            }
         }
       });
     
     $(window).on({
         scroll: function() {
             if ($(document).scrollTop() > 50) {
-                $('#naslovna-slika').hide();
-                $('#button-home').show();
+                $('.navbar-brand').hide();
+                $('#navigation-bar-napis').show();
               $('.navbar').addClass('shrink');
             } else {
-                $('#button-home').hide();
-                $('#naslovna-slika').show();
+                $('#navigation-bar-napis').hide();
+                $('.navbar-brand').show();
                 $('.navbar').removeClass('shrink');
             }
         }
