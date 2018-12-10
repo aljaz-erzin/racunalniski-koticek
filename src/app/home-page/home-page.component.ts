@@ -14,6 +14,7 @@ import { Artikel } from '../skupno/objekti/Artikel'
 export class HomePage implements OnInit{
   title : String;
 
+  
   constructor(
     private db_call : HttpCalls
   ){}
