@@ -10,6 +10,7 @@ app.get('/', (req, res) =>
         if (error)
             throw error;
             console.log(results);
+            console.log("10.12");
             res.send(results)
     })
 )
@@ -55,4 +56,3 @@ app.put('/:id', (req, res) =>
         res.send(result)
     })
 )
-

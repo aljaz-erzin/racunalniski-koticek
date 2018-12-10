@@ -1,11 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 
 body {
-    padding-top : 90px;
+    padding-top : 86px;
 }
 footer {
     height : 120px;
-    background-color:#a1d6fc;
+    position: fixed;
+    width:100%;
+    bottom: 0px;
+    background-color:#313332;
 }
 
 img, #naslovna-slika {
@@ -18,7 +21,7 @@ img, #naslovna-slika {
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
-    background-color: #a1d6fc;
+    background-color: #313332;
 }
 
 .navbar.shrink {

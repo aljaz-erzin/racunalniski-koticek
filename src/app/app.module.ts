@@ -7,7 +7,7 @@ import { FormsModule } from '@angular/forms';
 import { Glava } from './skupno/direktive/glava.component';
 import { Noga } from './skupno/direktive/noga.component';
 import { HomePage } from './home-page/home-page.component';
-
+import { OrderModule } from 'ngx-order-pipe';
 @NgModule({
   declarations: [
     HomePage,
@@ -18,6 +18,7 @@ import { HomePage } from './home-page/home-page.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    OrderModule,
     FormsModule,
     NgbModule.forRoot(),
   ],

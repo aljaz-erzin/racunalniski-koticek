@@ -12,5 +12,3 @@ app.get('/', function(req, res) {
 app.use('/stranke', routes_stranke);
 
 app.use('/artikli', routes_artikli);
-
-

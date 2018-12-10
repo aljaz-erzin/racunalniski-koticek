@@ -1,0 +1,51 @@
+img[_ngcontent-c0] {
+    /* margin: auto; */
+    height: 300px; /* You can change as you need */
+    /* width: 100%; */
+    width: 50%;
+}
+
+#akcije
+{
+    background-color: #c0d311;
+    margin-top: 0px;
+}
+.carousel-caption
+{
+    margin-left: 30%;
+    color : #313332;
+}
+
+ngb-carousel
+{
+    background-color: #c0d311;
+}
+
+#napis-ceneje
+{
+    color : #313332;
+    border-color: #313332;
+    font-size: 40px;
+    font-family: fantasy;
+}
+#napis-ceneje-drugi
+{
+    color : #883232;
+    border-color: #883232;
+    font-size: 20px;
+    font-family: fantasy;
+}
+#discount
+{
+   color:#8f1616;
+   font-family: fantasy;
+   font-size: 40px;
+   position:absolute;
+   top:10px;
+   right:30px;
+}
+
+*:focus {
+    outline: none !important;
+    border: 0 !important;
+}

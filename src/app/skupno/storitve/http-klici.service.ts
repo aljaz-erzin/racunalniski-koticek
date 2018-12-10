@@ -13,8 +13,9 @@ export class HttpCalls{
     constructor(private http: HttpClient) {}
 
     // Calls for Stranka
-    public GetStranke()
+    GetStranke()
     {
+        console.log("Strnakew")
         return this.http.request('get', this.stranke_db);
     }
 
@@ -42,7 +43,6 @@ export class HttpCalls{
     // Calls for Artikel
     GetArtikli()
     {
-        
         return this.http.request('get', this.artikli_db);
     }
 
@@ -51,6 +51,10 @@ export class HttpCalls{
         return this.http.request('get', this.artikli_db + id); 
     }
 
+    GetPopustDesc()
+    {
+        return this.http.request('get', this.artikli_db+'Popust-desc');
+    }
     AddArtikel(nov_artikel : object)
     {
         return this.http.request('post', this.artikli_db,  {body : nov_artikel}).subscribe();
