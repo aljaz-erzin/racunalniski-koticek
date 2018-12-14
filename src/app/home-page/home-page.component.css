@@ -5,6 +5,14 @@ img[_ngcontent-c0] {
     width: 50%;
 }
 
+#trgovina, #priporocila, #forum
+{
+    height:400px;
+}
+#margintop, #storitve
+{
+    margin-top:40px;
+}
 #akcije
 {
     background-color: #c0d311;
