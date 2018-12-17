@@ -1,4 +1,3 @@
-
 <glava></glava>
 <div  class="container-fluid">
    <div id="akcije" class="row" *ngIf="akcije">
@@ -27,18 +26,20 @@
                 </a>
       </ngb-carousel>
    </div>
-   <div id="margintop">Opis strani...</div>
    <div id="storitve"  class="row">
-      <div id="trgovina" class="col-md-4 rounded border">
-            <h1 style="position:center;">Trgovina</h1>
+      <div id="trgovina" (click)="redirect('trgovina')"  class="col-md-3 offset-md-1 rounded shadow">
+            <h2 style="text-align:center;">TRGOVINA</h2>
+            <p>Spletna trgovina...</p>
+            <a [routerLink]="['/store']">Route itttt</a>
       </div>
-      <div id="priporocila" class="col-md-4 rounded border">
-               Priporocila
+      <div id="priporocila" (click)="redirect('priporocila')"  class="col-md-3 rounded shadow" style="margin-left:20px;">
+               <h2 style="text-align:center;">PRIPOROCILA</h2>
+               <p>Trendi v računalniškem svetu...</p>
       </div>
-      <div id="forum" class="col-md-4 rounded border" style="border-color:#313332">
-            Forum
+      <div id="forum" (click)="redirect('forum')" class="col-md-3 offset-md-right-1 rounded shadow" style="margin-left:20px;">
+            <h2 style="text-align:center;">FORUM</h2>
+            <p>Conect to others...</p>
       </div>    
    </div>
 </div>
 <noga></noga>
-

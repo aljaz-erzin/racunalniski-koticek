@@ -7,7 +7,24 @@ img[_ngcontent-c0] {
 
 #trgovina, #priporocila, #forum
 {
-    height:400px;
+    height:300px;
+    font-family: serif;
+    background-color:rgb(170, 214, 235);
+}
+#forum:hover
+{
+    background: rgb(107, 187, 224);
+    cursor: pointer;
+}
+#priporocila:hover
+{
+    background: rgb(107, 187, 224);
+    cursor: pointer;
+}
+#trgovina:hover
+{
+    background: rgb(107, 187, 224);
+    cursor: pointer;
 }
 #margintop, #storitve
 {

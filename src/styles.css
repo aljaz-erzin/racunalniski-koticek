@@ -5,10 +5,11 @@ body {
 }
 footer {
     height : 120px;
-    position:absolute;
+    position:relative;
     width:100%;
+    margin-top:60px;
     bottom: 0px;
-    background-color:#313332;
+    background-color:rgb(105, 137, 151);
 }
 
 img, #naslovna-slika {
@@ -21,7 +22,8 @@ img, #naslovna-slika {
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
-    background-color: #313332;
+    background-color: rgb(105, 137, 151);
+    z-index:9; 
 }
 
 .navbar.shrink {

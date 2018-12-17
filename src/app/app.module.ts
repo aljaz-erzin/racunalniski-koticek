@@ -7,10 +7,19 @@ import { FormsModule } from '@angular/forms';
 import { Glava } from './skupno/direktive/glava.component';
 import { Noga } from './skupno/direktive/noga.component';
 import { HomePage } from './home-page/home-page.component';
+import { StoreHomePage } from './store-pages/store-home-page/store-home-page.component';
 import { OrderModule } from 'ngx-order-pipe';
+import { AppComponent } from './app.component';
+import { ChatHomePage } from './chat-pages/chat-home-page/chat-home-page.component';
+import { RecommendHomePage } from './recommend-pages/recommend-home-page/recommend-home-page.component';
+
 @NgModule({
   declarations: [
+    AppComponent,
     HomePage,
+    StoreHomePage,
+    ChatHomePage,
+    RecommendHomePage,
     Glava,
     Noga
   ],
@@ -23,7 +32,7 @@ import { OrderModule } from 'ngx-order-pipe';
     NgbModule.forRoot(),
   ],
   providers: [],
-  bootstrap: [HomePage]
+  bootstrap: [AppComponent]
 })
 
 export class AppModule { }
