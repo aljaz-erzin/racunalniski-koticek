@@ -5,11 +5,11 @@ body {
 }
 footer {
     height : 120px;
-    position:relative;
+    position:absolute;
     width:100%;
     margin-top:60px;
     bottom: 0px;
-    background-color:rgb(105, 137, 151);
+    background-color:rgb(168, 187, 197);
 }
 
 img, #naslovna-slika {
@@ -22,7 +22,7 @@ img, #naslovna-slika {
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
-    background-color: rgb(105, 137, 151);
+    background-color: rgb(168, 187, 197);
     z-index:9; 
 }
 
@@ -38,3 +38,4 @@ img, #naslovna-slika {
     font-size: 20px;
     color: #010701;
 }
+

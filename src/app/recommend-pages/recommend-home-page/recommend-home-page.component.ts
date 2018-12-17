@@ -17,7 +17,7 @@ export class RecommendHomePage implements OnInit, OnDestroy {
   akcije : any;
   artikli : any;
   max_popust : number;
-  redirect : boolean = false;
+  
 
   constructor(
     private db_call : HttpCalls,
