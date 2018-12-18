@@ -49,7 +49,7 @@ app.delete('/:id', (req, res) =>
 )
 
 app.post('/', (req, res) =>
-    connection.query("INSERT INTO artikel (naziv, opis, novo, zaloga_kolicina, popust, img_url) VALUES (?, ?, ?, ?, ?, ?)", [req.body.naziv, req.body.opis, req.body.novo, req.body.zaloga_kolicina, req.body.popust, req.body.img_url],  function (err, result) {
+    connection.query("INSERT INTO artikel (naziv, opis, novo, zaloga_kolicina, popust, img_url, vrsta, znamka, model, prostornina, cena) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ? , ?, ?)", [req.body.naziv, req.body.opis, req.body.novo, req.body.zaloga_kolicina, req.body.popust, req.body.img_url, req.body.vrsta, req.body.znamka, req.body.model, req.body.prostornina, req.body.cena],  function (err, result) {
         if (err)
         {
             throw err;
@@ -60,7 +60,7 @@ app.post('/', (req, res) =>
 )
 
 app.put('/:id', (req, res) =>
-    connection.query("UPDATE artikel SET naziv=?, opis=?, novo=?, zaloga_kolicina=?, popust=?, img_url=? WHERE id=?", [req.body.naziv, req.body.opis, req.body.novo, req.body.zaloga_kolicina, req.params.popust, req.params.img_url, req.params.id],  function (err, result) {
+    connection.query("UPDATE artikel SET naziv=?, opis=?, novo=?, zaloga_kolicina=?, popust=?, img_url=?, vrsta=?, znamka=?, model=?, prostornina=?, cena=? WHERE id=?", [req.body.naziv, req.body.opis, req.body.novo, req.body.zaloga_kolicina, req.params.popust, req.params.img_url,  req.params.vrsta, req.params.znamka, req.params.model, req.params.prostornina, req.params.cena, req.params.id],  function (err, result) {
         if (err)
         {
             throw err;

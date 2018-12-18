@@ -5,4 +5,9 @@ export class Artikel {
     zaloga_kolicina : number;
     popust : number;
     img_url : String;
+    vrsta : String;
+    znamka : String;
+    model : String;
+    prostornina : number;
+    cena : number;
 }

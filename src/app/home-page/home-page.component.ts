@@ -40,8 +40,11 @@ export class HomePage implements OnInit, OnDestroy {
       // Clean sub to avoid memory leak
       console.log("Hy and goodbye");
     }
-
-
+    
+    PictureToUrl(dir) : String {
+      
+      return null
+    }
 
 
     redirect = function(ukaz)

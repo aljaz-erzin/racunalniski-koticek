@@ -7,7 +7,7 @@
       </div>
       <ngb-carousel class="col-md-6">
             <ng-template ngbSlide  *ngFor='let akcija of akcije | async'>
-               <img  id="slike-popusti" [src]="akcija.img_url" [alt]="akcija.naziv">
+               <img  id="slike-popusti" [src]="PictureToUrl(akcija.img_url)" [alt]="akcija.naziv">
                <div class="carousel-caption">
                   <h3>{{  akcija.naziv }}</h3>
                   <p>{{ akcija.opis }}</p>

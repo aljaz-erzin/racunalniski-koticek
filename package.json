@@ -31,6 +31,7 @@
     "ngx-bootstrap": "^3.1.2",
     "ngx-order-pipe": "^2.0.2",
     "rxjs": "~6.3.3",
+    "tns-core-modules": "^5.1.0",
     "ts-node-dev": "^1.0.0-pre.31",
     "tslib": "^1.9.0",
     "yarn": "^1.12.3",
