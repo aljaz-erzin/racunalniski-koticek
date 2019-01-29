@@ -1,9 +1,14 @@
 import { routes } from './router/routes'; 
 
 var express = require('express');
-var session = require('client-sessions');
+
+var session = require('express-session');
 
 const app = express();
+
+
+// Session: 
+app.use(session({ secret: 'keyboard cat', cookie: { maxAge: 60000 }}))
 
 // Allow any method from any host and log requests
 app.use((req, res, next) => {
@@ -24,13 +29,6 @@ app.use(express.json());
 app.use('/', routes);
 
 
-// Session: 
-app.use(session({
-    cookieName: 'session',
-    secret: 'aljazerzinracunalniskikoticekapp',
-    duration: 30 * 60 * 1000,
-    activeDuration: 5 * 60 * 1000,
-  }));
 
 // start our server on port 4201
 app.listen(4201, '127.0.0.1', function() {

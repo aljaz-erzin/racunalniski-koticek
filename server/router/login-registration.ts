@@ -1,6 +1,5 @@
 var express = require('express');
 var connection = require('../mysql-connection');
-
 export const app = express.Router();
 export { app as routes_login };
 
@@ -19,9 +18,9 @@ app.post('/Verify', (req, res) =>
             return res.send("Napačno geslo!");
         }
         
-            console.log(results);
-            req.session.user = results;
-            res.send(results)
+            console.log(results[0]);
+            req.session.user = results[0];
+            res.send(results[0])
         
     })
 )

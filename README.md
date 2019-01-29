@@ -3,7 +3,7 @@ Node MySql:
 https://www.w3schools.com/nodejs/nodejs_mysql_delete.asp
 
 USER LOGIN:
-- https://stormpath.com/blog/everything-you-ever-wanted-to-know-about-node-dot-js-sessions 
+- https://github.com/expressjs/session
 
 ZAPISKI:
 - 
@@ -17,7 +17,7 @@ TO-DO:
     * Dodaj Sql server
     * sql community
     * MySql client line
-    * npm install client-sessions
+    * npm install express-session
 - Ljubljana:
 
 - Povsod:
