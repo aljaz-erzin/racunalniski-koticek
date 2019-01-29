@@ -7,27 +7,27 @@ import { Injectable } from '@angular/core';
 
 export class HttpCalls{
 
-    stranke_db = 'http://localhost:4201/stranke/';
+    stranke_db = 'http://localhost:4201/login-registration/';
     artikli_db = 'http://localhost:4201/artikli/';
-    
     constructor(private http: HttpClient) {}
 
     // Calls for Stranka
-    GetStranke()
+    Login(username : String, passwd : String)
     {
-        console.log("Strnakew")
-        return this.http.request('get', this.stranke_db);
+        return this.http.request('post', this.stranke_db + "Verify", {body : {uporabnisko_ime : username, geslo : passwd}}).subscribe();
     }
 
+    Register(nova_stranka : object)
+    {
+        return this.http.request('post', this.stranke_db,  {body : nova_stranka}).subscribe();
+    }
+/*
     GetStrankaById(id : number)
     {
         return this.http.request('get', this.stranke_db + id); 
     }
 
-    AddStranka(nova_stranka : object)
-    {
-        return this.http.request('post', this.stranke_db,  {body : nova_stranka}).subscribe();
-    }
+    
 
     UpdateStranka(id : number, update_stranka : object)
     {
@@ -39,6 +39,7 @@ export class HttpCalls{
         return this.http.request('delete', this.stranke_db + id).subscribe();
     }
 
+*/
 
     // Calls for Artikel
     GetArtikli()

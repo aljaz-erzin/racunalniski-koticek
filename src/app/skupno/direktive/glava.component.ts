@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from "jquery";
+import { Router } from '@angular/router';
+import { Location } from '@angular/common'; 
+
+
 @Component({
   selector: 'glava',
   templateUrl: './glava.component.html',
@@ -10,6 +14,19 @@ import * as $ from "jquery";
 
 export class Glava {
 
+    constructor(
+        private router: Router,
+        private location: Location
+      ){}   
+
+    redirect = function(ukaz)
+    {
+      if (ukaz === 'login')
+      {
+        console.log(ukaz);
+        this.router.navigate(['login']);
+      }
+    }
     
 }
 

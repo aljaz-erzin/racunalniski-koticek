@@ -17,6 +17,7 @@ TO-DO:
     * Dodaj Sql server
     * sql community
     * MySql client line
+    * npm install client-sessions
 - Ljubljana:
 
 - Povsod:

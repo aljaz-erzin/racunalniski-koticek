@@ -1,4 +1,4 @@
-import { routes_stranke } from './stranke'
+import { routes_login } from './login-registration'
 import { routes_artikli } from './artikli'
 var express = require('express');
 
@@ -9,6 +9,6 @@ app.get('/', function(req, res) {
     res.send('Server Node, dobrodošli!');
   });
 
-app.use('/stranke', routes_stranke);
+app.use('/login-registration', routes_login);
 
 app.use('/artikli', routes_artikli);

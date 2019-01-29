@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { StoreHomePage } from './store-pages/store-home-page/store-home-page.component';
+import { Login } from './login-registration-pages/login/login.component';
 import { HomePage } from './home-page/home-page.component';
 import { ChatHomePage } from './chat-pages/chat-home-page/chat-home-page.component';
 import { RecommendHomePage } from './recommend-pages/recommend-home-page/recommend-home-page.component';
@@ -10,6 +11,7 @@ const routes: Routes = [
   { path: 'store',  component: StoreHomePage,  pathMatch: 'full' , data: { title: 'Spletna trgovina' } },
   { path: 'recommendation',  component: RecommendHomePage,  pathMatch: 'full' , data: { title: 'Priporočila' } },
   { path: 'chat',  component: ChatHomePage,  pathMatch: 'full' , data: { title: 'Spletni chat' } },
+  { path: 'login',  component: Login,  pathMatch: 'full' , data: { title: 'Prijava' } },
 ];
 
 @NgModule({

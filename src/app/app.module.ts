@@ -12,11 +12,13 @@ import { OrderModule } from 'ngx-order-pipe';
 import { AppComponent } from './app.component';
 import { ChatHomePage } from './chat-pages/chat-home-page/chat-home-page.component';
 import { RecommendHomePage } from './recommend-pages/recommend-home-page/recommend-home-page.component';
+import { Login } from './login-registration-pages/login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePage,
+    Login,
     StoreHomePage,
     ChatHomePage,
     RecommendHomePage,
