@@ -1,6 +1,10 @@
 
 Node MySql:   
 https://www.w3schools.com/nodejs/nodejs_mysql_delete.asp
+
+USER LOGIN:
+- https://stormpath.com/blog/everything-you-ever-wanted-to-know-about-node-dot-js-sessions 
+
 ZAPISKI:
 - 
 
