@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 
 
 export class HttpCalls{
-
+    login = 'http://localhost:4201/login'
     stranke_db = 'http://localhost:4201/login-registration/';
     artikli_db = 'http://localhost:4201/artikli/';
     constructor(private http: HttpClient) {}
@@ -14,7 +14,7 @@ export class HttpCalls{
     // Calls for Stranka
     Login(username : String, passwd : String)
     {
-        return this.http.request('post', this.stranke_db + "Verify", {body : {uporabnisko_ime : username, geslo : passwd}}).subscribe();
+        return this.http.request('post', this.login, {body : {uporabnisko_ime : username, geslo : passwd}}).subscribe();
     }
 
     Register(nova_stranka : object)
