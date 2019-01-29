@@ -4,6 +4,7 @@ https://www.w3schools.com/nodejs/nodejs_mysql_delete.asp
 
 USER LOGIN:
 - https://github.com/expressjs/session
+- https://www.tsmean.com/articles/authentication/express-session-angular/ with angular
 
 ZAPISKI:
 - 
